@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenScreen.unity
+    path: Assets/Scenes/MenuScreen.unity
     guid: 7c2cdcd39493c4ecaa28db43b452e2ad
   - enabled: 1
-    path: Assets/Scenes/CharacterSelection 1.unity
+    path: Assets/Scenes/CharacterSelection.unity
     guid: 5e70b356fa12342bb80fa7156bddc47b
+  - enabled: 1
+    path: Assets/Scenes/LoadBattleScene.unity
+    guid: 8e64f7ff4dfa843059ecd6de960f52d8
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: 73c7b0a1fe1be4db7962796d530a4019
   m_configObjects: {}

@@ -1187,7 +1187,7 @@ GameObject:
   - component: {fileID: 1848516343}
   - component: {fileID: 1848516344}
   m_Layer: 0
-  m_Name: MenuButtonScript
+  m_Name: MainMenuScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
