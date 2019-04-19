@@ -10,13 +10,12 @@ public class ShootController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Cursor.visible = false;
         Shoot();
 
     }
@@ -41,7 +40,6 @@ public class ShootController : MonoBehaviour
 
     private void Shoot()
     {
-        Vector3 direction = transform.TransformDirection(Vector3.up);
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 targetPoint;
@@ -55,7 +53,7 @@ public class ShootController : MonoBehaviour
                 Debug.Log(Camera.main.transform.forward);
                 targetPoint = Camera.main.transform.forward * 1000;
             }
-            Vector3 bulletPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            Vector3 bulletPosition = Camera.main.transform.position;
             GameObject bullet = Instantiate(bullets, bulletPosition, Quaternion.identity) as GameObject;
             bullet.transform.LookAt(targetPoint);
             Rigidbody bulletRigibody = bullet.GetComponent<Rigidbody>();
