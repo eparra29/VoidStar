@@ -90,7 +90,10 @@ public class Flock : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        flockManager.tieFighterSquadron.Remove(this.gameObject);
-        Destroy(this.gameObject);
+        if (collision.gameObject.tag == "LaserBullet")
+        {
+            flockManager.tieFighterSquadron.Remove(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }
