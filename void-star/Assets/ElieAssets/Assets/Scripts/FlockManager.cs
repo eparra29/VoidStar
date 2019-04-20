@@ -35,7 +35,7 @@ public class FlockManager : MonoBehaviour
     {
         this.minimumSpeed = 5f;
         this.maximumSpeed = 7f;
-        leader = GameObject.Find("TieSilencer");
+        //leader = GameObject.Find("TieSilencer");
         leader.SetActive(false);
 
         tieFighterSquadron = new List<GameObject>();//size or number of leaders

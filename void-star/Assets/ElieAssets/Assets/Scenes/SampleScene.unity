@@ -227,7 +227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &317864132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   followTheLeaderActivated: 0
   circleTreeActivated: 0
   lazyFlightActivated: 1
-  leader: {fileID: 0}
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
   minimumSpeed: 0
   maximumSpeed: 0
   neighborSpacing: 15
@@ -569,6 +569,118 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimingStar: {fileID: 2100000, guid: d9af48e1744d04df796cf7292e5fba5f, type: 2}
   bullets: {fileID: 5119941816195823521, guid: 4bbd55e661b984ced8c1df873a1b4a9a, type: 3}
+--- !u!1 &617082951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617082953}
+  - component: {fileID: 617082952}
+  m_Layer: 0
+  m_Name: FlockManager (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &617082952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617082951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &617082953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617082951}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &694919370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694919372}
+  - component: {fileID: 694919371}
+  m_Layer: 0
+  m_Name: FlockManager (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &694919371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694919370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &694919372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694919370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -30, y: 5, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &829596994
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +734,62 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+--- !u!1 &1171446540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1171446542}
+  - component: {fileID: 1171446541}
+  m_Layer: 0
+  m_Name: FlockManager (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1171446541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171446540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &1171446542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171446540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20, y: -4, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198305201
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +889,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1311441102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311441104}
+  - component: {fileID: 1311441103}
+  m_Layer: 0
+  m_Name: FlockManager (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1311441103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311441102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &1311441104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311441102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 20, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413012053
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +1010,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1476614019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476614021}
+  - component: {fileID: 1476614020}
+  m_Layer: 0
+  m_Name: FlockManager (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1476614020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476614019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &1476614021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476614019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25, y: 25, z: -15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1653124329
 GameObject:
@@ -875,6 +1155,118 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aminingStyleList:
-  - {fileID: 21300000, guid: ee8cb57ba2b064b07b77811f80f7e9ae, type: 3}
   - {fileID: 21300000, guid: 83f39a5149dfb43028dd1640fa4f56bb, type: 3}
+  - {fileID: 21300000, guid: ee8cb57ba2b064b07b77811f80f7e9ae, type: 3}
   - {fileID: 21300000, guid: b90feb873f2944e6cb94d4447c95026b, type: 3}
+--- !u!1 &1759704174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759704176}
+  - component: {fileID: 1759704175}
+  m_Layer: 0
+  m_Name: FlockManager (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759704175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759704174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &1759704176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759704174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15, y: 5, z: -20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2105973106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105973108}
+  - component: {fileID: 2105973107}
+  m_Layer: 0
+  m_Name: FlockManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2105973107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105973106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4af2a695c374394a87a9e1cd0496cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieFighter: {fileID: 1672861995, guid: 697bf91f717a64017bdee4c718a4dd7f, type: 3}
+  numberOfTieFighters: 15
+  tieFighterSquadron: []
+  flightLimits: {x: 8, y: 8, z: 8}
+  goalPosition: {x: 0, y: 0, z: 0}
+  followTheLeaderActivated: 0
+  circleTreeActivated: 0
+  lazyFlightActivated: 1
+  leader: {fileID: 9184634546290985515, guid: a341f9fc577ff4e189c060361415569b, type: 3}
+  minimumSpeed: 0
+  maximumSpeed: 0
+  neighborSpacing: 15
+  rotationSpeed: 0.99
+--- !u!4 &2105973108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105973106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
