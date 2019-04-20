@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3.578125, y: 1.5e-44, z: 0, w: 2}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -545,7 +545,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.01
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -567,8 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5cf861af35a94d84b3f0447b63114ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimingStar: {fileID: 2100000, guid: d9af48e1744d04df796cf7292e5fba5f, type: 2}
-  bullets: {fileID: 5119941816195823521, guid: 4bbd55e661b984ced8c1df873a1b4a9a, type: 3}
+  bullets: {fileID: 8569496838387745496, guid: 3bde612218cf340f59f2ad5d51d1a5a7, type: 3}
 --- !u!1 &617082951
 GameObject:
   m_ObjectHideFlags: 0

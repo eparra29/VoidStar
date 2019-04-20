@@ -5,7 +5,6 @@ using UnityEngine;
 public class ShootController : MonoBehaviour
 {
 
-    public Material aimingStar;
     public GameObject bullets;
     // Start is called before the first frame update
     void Start()
