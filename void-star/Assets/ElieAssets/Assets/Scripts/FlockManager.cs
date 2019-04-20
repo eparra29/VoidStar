@@ -58,6 +58,11 @@ public class FlockManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tieFighterSquadron == null || tieFighterSquadron.Count == 0) {
+            Destroy(this.gameObject);
+            return;
+         }
+
         if (lazyFlightActivated)
         {
             if (Random.Range(0, 100) < 1)
@@ -67,7 +72,8 @@ public class FlockManager : MonoBehaviour
             goalPosition = leader.transform.position;
 
         else if(circleTreeActivated)
-            goalPosition = this.transform.position;    
+            goalPosition = this.transform.position; 
+           
     }
 
 
