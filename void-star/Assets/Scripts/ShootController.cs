@@ -7,11 +7,13 @@ public class ShootController : MonoBehaviour
 {
 
     public GameObject bullets;
+    public GameObject battleSfx;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.visible = false;
+        battleSfx = GameObject.Find("BattleSfx");
     }
 
     // Update is called once per frame
@@ -43,6 +45,19 @@ public class ShootController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
+
+            if (PlayerPrefs.GetInt(Utils.AIMING_STYLE) < 2 )
+            {
+                battleSfx.GetComponents<AudioSource>()[0].Play();
+            }
+            else if (PlayerPrefs.GetInt(Utils.AIMING_STYLE) == 2)
+            {
+                battleSfx.GetComponents<AudioSource>()[1].Play();
+            }
+
+
+
             Vector3 targetPoint;
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
             if (Physics.Raycast(ray, out RaycastHit hitInfo))
