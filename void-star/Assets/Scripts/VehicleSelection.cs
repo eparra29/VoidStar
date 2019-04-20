@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class VehicleSelection : MonoBehaviour
 {
@@ -74,6 +75,7 @@ public class VehicleSelection : MonoBehaviour
 
     public void SelectVehicle()
     {
+        PlayerPrefs.SetInt(Utils.AIMING_STYLE, showIndex);
         PlayVehicleSelectionButtonSfx();
         StartCoroutine(GoToLoadingScene());
     }
