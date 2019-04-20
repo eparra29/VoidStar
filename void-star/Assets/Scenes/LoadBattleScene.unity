@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1590057653}
   - component: {fileID: 1590057652}
   m_Layer: 0
-  m_Name: LoadBattleSceneScript
+  m_Name: LoadingScenesScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

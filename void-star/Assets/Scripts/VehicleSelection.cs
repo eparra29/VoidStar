@@ -75,7 +75,7 @@ public class VehicleSelection : MonoBehaviour
     public void SelectVehicle()
     {
         PlayVehicleSelectionButtonSfx();
-        StartCoroutine(GoToBattleScene());
+        StartCoroutine(GoToLoadingScene());
     }
 
     public void PlayVehicleSelectionButtonSfx()
@@ -83,9 +83,9 @@ public class VehicleSelection : MonoBehaviour
         gameObject.GetComponents<AudioSource>()[0].Play();
     }
 
-    IEnumerator GoToBattleScene()
+    IEnumerator GoToLoadingScene()
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1 );
     }
 }
