@@ -20,22 +20,22 @@ public class ShootController : MonoBehaviour
 
     }
 
-    private void OnPostRender()
-    {
-        DrawRecent(Screen.width / 2, Screen.height / 2, 10, 10);
-    }
+    //private void OnPostRender()
+    //{
+    //    DrawRecent(Screen.width / 2, Screen.height / 2, 10, 10);
+    //}
 
-    private void DrawRecent(float x, float y, float width, float height)
-    {
-        aimingStar.SetPass(0);
-        GL.LoadOrtho();
-        GL.Begin(GL.QUADS);
-        GL.Vertex(new Vector3(x / Screen.width, y / Screen.height, 0));
-        GL.Vertex(new Vector3(x / Screen.width, (y + height) / Screen.height, 0));
-        GL.Vertex(new Vector3((x + width) / Screen.width, (y + height) / Screen.height, 0));
-        GL.Vertex(new Vector3((x + width) / Screen.width, y / Screen.height, 0));
-        GL.End();
-    }
+    //private void DrawRecent(float x, float y, float width, float height)
+    //{
+    //    aimingStar.SetPass(0);
+    //    GL.LoadOrtho();
+    //    GL.Begin(GL.QUADS);
+    //    GL.Vertex(new Vector3(x / Screen.width, y / Screen.height, 0));
+    //    GL.Vertex(new Vector3(x / Screen.width, (y + height) / Screen.height, 0));
+    //    GL.Vertex(new Vector3((x + width) / Screen.width, (y + height) / Screen.height, 0));
+    //    GL.Vertex(new Vector3((x + width) / Screen.width, y / Screen.height, 0));
+    //    GL.End();
+    //}
 
 
     private void Shoot()

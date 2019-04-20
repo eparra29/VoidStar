@@ -48,7 +48,7 @@ public class Flock : MonoBehaviour
     {
 
         speed = Random.Range(flockManager.GetMinimumSpeed(), flockManager.GetMaximumSpeed());
-        GameObject[] currentLeaderSquadron;
+        List<GameObject> currentLeaderSquadron;
         currentLeaderSquadron = flockManager.tieFighterSquadron;
 
         Vector3 averageCenter = Vector3.zero;
@@ -59,6 +59,7 @@ public class Flock : MonoBehaviour
 
         foreach (GameObject currentTieFighter in currentLeaderSquadron)
         {
+
             if (currentTieFighter != this.gameObject)
             {
                 neighborDistance = Vector3.Distance(currentTieFighter.transform.position, this.transform.position);
@@ -85,5 +86,11 @@ public class Flock : MonoBehaviour
             if (direction != Vector3.zero)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), flockManager.rotationSpeed * Time.deltaTime);
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        flockManager.tieFighterSquadron.Remove(this.gameObject);
+        Destroy(this.gameObject);
     }
 }

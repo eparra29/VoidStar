@@ -8,7 +8,7 @@ public class FlockManager : MonoBehaviour
     public GameObject tieFighter;
     public int numberOfTieFighters = 13;
     //tutorial refrences this as allLeaders[]
-    public GameObject[] tieFighterSquadron;
+    public List<GameObject> tieFighterSquadron;
     public Vector3 flightLimits = new Vector3(5, 5, 5);
     public Vector3 goalPosition;
     public bool followTheLeaderActivated = false;
@@ -38,7 +38,7 @@ public class FlockManager : MonoBehaviour
         leader = GameObject.Find("TieSilencer");
         leader.SetActive(false);
 
-        tieFighterSquadron = new GameObject[numberOfTieFighters];//size or number of leaders
+        tieFighterSquadron = new List<GameObject>();//size or number of leaders
         for (int i = 0; i < numberOfTieFighters; i++)
         {
             //calculate how close or far in range leader object will appear to its leader manger
@@ -47,9 +47,10 @@ public class FlockManager : MonoBehaviour
                                                                      Random.Range(-flightLimits.z, flightLimits.z));
 
             //this will instantiate and place leader object in calculated position            
-            tieFighterSquadron[i] = (GameObject)Instantiate(tieFighter, position, Quaternion.identity);
+            tieFighterSquadron.Add(Instantiate(tieFighter, position, Quaternion.identity) as GameObject) ;
             //linking leader with leader manager
-            tieFighterSquadron[i].GetComponent<Flock>().flockManager = this;
+            Flock flock = tieFighterSquadron[i].GetComponent<Flock>();
+            flock.flockManager = this;
         }
         goalPosition = this.transform.position;
     }
