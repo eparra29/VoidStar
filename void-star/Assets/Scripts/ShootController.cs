@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class ShootController : MonoBehaviour
 {
 
     public GameObject bullets;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +54,7 @@ public class ShootController : MonoBehaviour
                 Debug.Log(Camera.main.transform.forward);
                 targetPoint = Camera.main.transform.forward * 1000;
             }
-            Vector3 bulletPosition = Camera.main.transform.position;
+            Vector3 bulletPosition = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y - 1.5f, Camera.main.transform.position.z);
             GameObject bullet = Instantiate(bullets, bulletPosition, Quaternion.identity) as GameObject;
             bullet.transform.LookAt(targetPoint);
             Rigidbody bulletRigibody = bullet.GetComponent<Rigidbody>();

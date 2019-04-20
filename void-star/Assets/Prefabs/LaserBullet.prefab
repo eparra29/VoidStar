@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7576739802304961458}
   m_Layer: 0
   m_Name: LaserBullet
-  m_TagString: Untagged
+  m_TagString: LaserBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,6 +141,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032719875681962061, guid: a84f50dde0c984063bbe32d42bb4784b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2032719875681962061, guid: a84f50dde0c984063bbe32d42bb4784b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a84f50dde0c984063bbe32d42bb4784b, type: 3}
