@@ -22,7 +22,7 @@ public class EnemyFireGenerator : MonoBehaviour
         xPosition = Random.Range(-300, 300);
         yPosition = Random.Range(100, 200);
         zPosition = Random.Range(-300, 300);
-        if(timeBetweenAttacks >= 12)
+        if(timeBetweenAttacks >= 2)
         {
             GenerateEnemyFire();
             timeBetweenAttacks = 0;
