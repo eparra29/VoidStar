@@ -27,7 +27,15 @@ public class MainMenu : MonoBehaviour
         gameObject.GetComponents<AudioSource>()[0].Play();
     }
 
+    public void CallGoToCredits()
+    {
+        StartCoroutine(GoToCredits());
+    }
 
-
+    IEnumerator GoToCredits()
+    {
+        yield return new WaitForSeconds(0.52f);
+        SceneManager.LoadScene(6);
+    }
 
 }
