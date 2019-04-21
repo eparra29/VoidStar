@@ -17,6 +17,7 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        GameObject.Find("UImanager").GetComponent<UImanager>().score++;
         GameObject.Find("BattleSfx").GetComponents<AudioSource>()[2].Play();
         Destroy(gameObject);
     }
