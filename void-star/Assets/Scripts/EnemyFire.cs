@@ -9,10 +9,12 @@ public class EnemyFire : MonoBehaviour
      
     private void OnCollisionEnter(Collision collision)
     {
-        Instantiate(smallExplosion, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
-        Instantiate(smokeParticle, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        GameObject newSmallExplosion = Instantiate(smallExplosion, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        GameObject newSmokeParticle = Instantiate(smokeParticle, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        newSmallExplosion.GetComponent<ParticleSystem>().Play();
+        newSmokeParticle.GetComponent<ParticleSystem>().Play();
         Destroy(gameObject);
-        GameObject.Find("EnemyFireGenerator").GetComponent<EnemyFireGenerator>().timeBetweenAttacks++;
-
+        Destroy(newSmallExplosion, 1.5f);
+        Destroy(newSmokeParticle, 5);
     }
 }

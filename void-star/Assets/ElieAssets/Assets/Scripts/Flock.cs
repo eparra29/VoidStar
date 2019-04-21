@@ -107,7 +107,7 @@ public class Flock : MonoBehaviour
             Destroy(this.gameObject);
             GameObject newExplosion = Instantiate(GameObject.Find("SmallExplosionEffect"), smallExplosion.transform.position, Quaternion.identity);
             newExplosion.GetComponent<ParticleSystem>().Play();
-            Destroy(newExplosion, 1);
+            Destroy(newExplosion, 1.5f);
         }
     }
 }

@@ -6,7 +6,8 @@ MonoImporter:
   defaultReferences:
   - smallExplosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,
       type: 3}
-  - smokeParticle: {fileID: 188050, guid: b06f0e6c1dfa4356ac918da1bb32c603, type: 3}
+  - smokeParticle: {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
