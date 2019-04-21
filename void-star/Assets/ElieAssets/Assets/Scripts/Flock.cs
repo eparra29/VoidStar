@@ -8,13 +8,18 @@ public class Flock : MonoBehaviour
     public FlockManager flockManager;
     float speed;
     bool reachedFlightLimit = false;
+    GameObject smallExplosion;
 
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         speed = Random.Range(flockManager.GetMinimumSpeed(), flockManager.GetMaximumSpeed());
+        smallExplosion = GameObject.Find("SmallExplosionEffect");
+
+
     }
 
     // Update is called once per frame
@@ -93,10 +98,16 @@ public class Flock : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.tag == "LaserBullet")
         {
+
+            smallExplosion.transform.position = new Vector3((float)collision.transform.position.x, (float)collision.transform.position.y, (float)collision.transform.position.z);
             flockManager.tieFighterSquadron.Remove(this.gameObject);
             Destroy(this.gameObject);
+            GameObject newExplosion = Instantiate(GameObject.Find("SmallExplosionEffect"), smallExplosion.transform.position, Quaternion.identity);
+            newExplosion.GetComponent<ParticleSystem>().Play();
+            Destroy(newExplosion, 1);
         }
     }
 }
