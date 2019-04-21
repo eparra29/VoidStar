@@ -73,7 +73,7 @@ public class ShootController : MonoBehaviour
             GameObject bullet = Instantiate(bullets, bulletPosition, Quaternion.identity) as GameObject;
             bullet.transform.LookAt(targetPoint);
             Rigidbody bulletRigibody = bullet.GetComponent<Rigidbody>();
-            bulletRigibody.velocity = bullet.transform.forward * 50;
+            bulletRigibody.velocity = bullet.transform.forward * 150;
             Destroy(bullet, 3f);
         }
 

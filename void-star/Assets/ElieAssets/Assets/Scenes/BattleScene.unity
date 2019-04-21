@@ -2105,7 +2105,7 @@ MonoBehaviour:
   cockPitImage: {fileID: 1653124329}
   myCamera: {fileID: 534669902}
   score: 0
-  time: 5
+  time: 30
 --- !u!4 &1722122356
 Transform:
   m_ObjectHideFlags: 0
