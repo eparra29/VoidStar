@@ -12,10 +12,13 @@ public class UImanager : MonoBehaviour
     public Text timeNumber;
 
     public int score;
+
+    public float time = 60;
     
     // Start is called before the first frame update
     void Start()
     {
+        timeNumber.text = time.ToString();
         scoreNumber.text = score.ToString();
     }
 
@@ -23,5 +26,7 @@ public class UImanager : MonoBehaviour
     void Update()
     {
         scoreNumber.text = score.ToString();
+        timeNumber.text = time.ToString("N0");
+        time -= Time.deltaTime; 
     }
 }
