@@ -6,6 +6,7 @@ public class EnemyFire : MonoBehaviour
 {
     public GameObject smallExplosion;
     public GameObject smokeParticle;
+
      
     private void OnCollisionEnter(Collision collision)
     {
@@ -13,6 +14,8 @@ public class EnemyFire : MonoBehaviour
         GameObject newSmokeParticle = Instantiate(smokeParticle, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         newSmallExplosion.GetComponent<ParticleSystem>().Play();
         newSmokeParticle.GetComponent<ParticleSystem>().Play();
+        if(!GameObject.Find("ExplosionSfx").GetComponents<AudioSource>()[1].isPlaying)
+            GameObject.Find("ExplosionSfx").GetComponents<AudioSource>()[1].Play();
         Destroy(gameObject);
         Destroy(newSmallExplosion, 1.5f);
         Destroy(newSmokeParticle, 5);

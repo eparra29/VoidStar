@@ -13,9 +13,10 @@ public class CharacterWalkingSfx : MonoBehaviour
     void Update()
     {
 
+
         if ((Input.GetButton("Horizontal") || Input.GetButton("Vertical")) && Input.GetButton("Shift"))     
         {
-            Debug.Log("InsideRunning");
+
             if (!isRunning)
             {
                 gameObject.GetComponents<AudioSource>()[0].Pause();
@@ -28,7 +29,7 @@ public class CharacterWalkingSfx : MonoBehaviour
         }
         else if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
         {
-            Debug.Log("InsideWalking");
+
             if (!isWalking)
             {
                 gameObject.GetComponents<AudioSource>()[1].Pause();
@@ -41,7 +42,7 @@ public class CharacterWalkingSfx : MonoBehaviour
         }
         if ((Input.GetButtonUp("Horizontal") || Input.GetButtonUp("Vertical")) && movedBefore)
         {
-            Debug.Log("InsideNoMovement");
+
             gameObject.GetComponents<AudioSource>()[0].Pause();
             gameObject.GetComponents<AudioSource>()[1].Pause();
             isWalking = false;
