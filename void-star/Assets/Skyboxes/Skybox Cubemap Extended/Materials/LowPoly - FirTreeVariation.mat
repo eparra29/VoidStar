@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LowPoly - FirTreeVariation
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHABLEND_ON _GLOSSYREFLECTIONS_OFF _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION _GLOSSYREFLECTIONS_OFF _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
@@ -83,8 +83,8 @@ Material:
     - __dirty: 0
     m_Colors:
     - _BottomColor: {r: 0.14855024, g: 0.36764702, b: 0.062175572, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 0.0001608456, g: 0.00015318628, b: 0.0006165748, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.8155856, a: 0.38431373}
+    - _EmissionColor: {r: 0.26794338, g: 0.26794338, b: 0.26794338, a: 1}
     - _TopColor: {r: 0.33912262, g: 0.7867647, b: 0.19669113, a: 1}
     - _Vector1: {r: 0, g: 0, b: 0, a: 0}
     - _WindCycles: {r: 0, g: 0, b: 0.5, a: 0}
