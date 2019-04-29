@@ -1,10 +1,11 @@
 # VoidStar 
 
 Brought To You By: 
-    Clayton Matulich 
-    Elie Puffelis 
-    Ernesto Parra 
-    Yao Wang
+
+1. Clayton Matulich 
+2. Elie Puffelis 
+3. Ernesto Parra 
+4. Yao Wang
 
 ## Team 09's 3D Final Group Game Project 
 
@@ -13,10 +14,10 @@ VoidStar is a first person shooter game that takes place in the dark cold void o
 ## Control Instructions 
 
 The game follows the traditional W A S D movement controls 
-    W - Foward Movement 
-    A - Left Movement 
-    S - Down Movement 
-    D - Right Movement 
+1. W - Foward Movement 
+2. A - Left Movement 
+3. S - Down Movement 
+4. D - Right Movement 
 
 Mobile Controls? 
 
