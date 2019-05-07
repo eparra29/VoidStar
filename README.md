@@ -1,23 +1,29 @@
 # VoidStar 
 
-Brought To You By: 
+Brought To You By Team_09:
 
-1. Clayton Matulich 
-2. Elie Puffelis 
-3. Ernesto Parra 
-4. Yao Wang
+* Clayton Matulich 
+* Elie Puffelis 
+* Ernesto Parra 
+* Yao Wang
 
-## Team 09's 3D Final Group Game Project 
+# About
 
-VoidStar is a first person shooter game that takes place in the dark cold void of space. The player is tasked with making their way to ship dock on their planetary base and picking the best fighter so that they can take down a flock of enemy fighters threatening their base. 
+VoidStar is a first person shooter game that takes place on the planet of Yavin 04. The player is playing as star pilot first tasked with running through a rain of laser fire to get to their starfighter which is located in the large fighter base located in the middle of the map. Once the player makes it through that and arrives at their ship they will be sent up into space to fight off the enemy. The player will have to hunt enemy fighters in the alloted time that they have and save the day! 
 
-## Control Instructions 
+# Controls
 
-The game follows the traditional W A S D movement controls 
-1. W - Foward Movement 
-2. A - Left Movement 
-3. S - Down Movement 
-4. D - Right Movement 
+## Ground Controls 
+* W - Foward Movement 
+* A - Left Movement 
+* S - Down Movement 
+* D - Right Movement 
+* Mouse/Trackpad - Look Around
 
-Mobile Controls? 
+## Space Controls 
+* Mouse/Trackpad - Look Around
+* Click - Fire 
+
+
+
 
