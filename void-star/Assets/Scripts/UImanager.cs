@@ -32,7 +32,7 @@ public class UImanager : MonoBehaviour
 
     public int score;
 
-    public float time = 30;
+    public float time = 60;
 
     private int highScore;
     
