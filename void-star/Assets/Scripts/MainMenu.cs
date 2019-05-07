@@ -5,7 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void QuitButton()
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+    }
+
+
+    public void QuitButton()
     {
         Application.Quit();
     }
@@ -37,5 +45,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(0.52f);
         SceneManager.LoadScene(6);
     }
+
+
 
 }
